@@ -1,0 +1,10 @@
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\bin\Debug\Lab4_Client_WF.exe.config
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\bin\Debug\Lab4_Client_WF.exe
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\bin\Debug\Lab4_Client_WF.pdb
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.csprojAssemblyReference.cache
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.Form1.resources
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.Properties.Resources.resources
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.csproj.GenerateResource.cache
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.csproj.CoreCompileInputs.cache
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.exe
+C:\Users\Ovi\Desktop\ii\Lab4_Client_WF\Lab4_Client_WF\obj\Debug\Lab4_Client_WF.pdb

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="Web Services" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="Web Services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Serviciu Web pentru Cursul de C#</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="Web Services">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FtoC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FtoCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FtoCResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CtoF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CtoFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CtoFResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowDateAndTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShowDateAndTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShowDateAndTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertToEuro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConvertToEuroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConvertToEuroResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ShowList">
+        <s:complexType />
+      </s:element>
+      <s:element name="ShowListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShowListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="FtoCSoapIn">
+    <wsdl:part name="parameters" element="tns:FtoC" />
+  </wsdl:message>
+  <wsdl:message name="FtoCSoapOut">
+    <wsdl:part name="parameters" element="tns:FtoCResponse" />
+  </wsdl:message>
+  <wsdl:message name="CtoFSoapIn">
+    <wsdl:part name="parameters" element="tns:CtoF" />
+  </wsdl:message>
+  <wsdl:message name="CtoFSoapOut">
+    <wsdl:part name="parameters" element="tns:CtoFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowDateAndTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:ShowDateAndTime" />
+  </wsdl:message>
+  <wsdl:message name="ShowDateAndTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:ShowDateAndTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConvertToEuroSoapIn">
+    <wsdl:part name="parameters" element="tns:ConvertToEuro" />
+  </wsdl:message>
+  <wsdl:message name="ConvertToEuroSoapOut">
+    <wsdl:part name="parameters" element="tns:ConvertToEuroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowListSoapIn">
+    <wsdl:part name="parameters" element="tns:ShowList" />
+  </wsdl:message>
+  <wsdl:message name="ShowListSoapOut">
+    <wsdl:part name="parameters" element="tns:ShowListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="My_x0020_first_x0020_web_x0020_serviceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <wsdl:input message="tns:AddSoapIn" />
+      <wsdl:output message="tns:AddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FtoC">
+      <wsdl:input message="tns:FtoCSoapIn" />
+      <wsdl:output message="tns:FtoCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CtoF">
+      <wsdl:input message="tns:CtoFSoapIn" />
+      <wsdl:output message="tns:CtoFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowDateAndTime">
+      <wsdl:input message="tns:ShowDateAndTimeSoapIn" />
+      <wsdl:output message="tns:ShowDateAndTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertToEuro">
+      <wsdl:input message="tns:ConvertToEuroSoapIn" />
+      <wsdl:output message="tns:ConvertToEuroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowList">
+      <wsdl:input message="tns:ShowListSoapIn" />
+      <wsdl:output message="tns:ShowListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="My_x0020_first_x0020_web_x0020_serviceSoap" type="tns:My_x0020_first_x0020_web_x0020_serviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="Web Services/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="Web Services/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FtoC">
+      <soap:operation soapAction="Web Services/FtoC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CtoF">
+      <soap:operation soapAction="Web Services/CtoF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDateAndTime">
+      <soap:operation soapAction="Web Services/ShowDateAndTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertToEuro">
+      <soap:operation soapAction="Web Services/ConvertToEuro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowList">
+      <soap:operation soapAction="Web Services/ShowList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="My_x0020_first_x0020_web_x0020_serviceSoap12" type="tns:My_x0020_first_x0020_web_x0020_serviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="Web Services/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="Web Services/Add" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FtoC">
+      <soap12:operation soapAction="Web Services/FtoC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CtoF">
+      <soap12:operation soapAction="Web Services/CtoF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDateAndTime">
+      <soap12:operation soapAction="Web Services/ShowDateAndTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertToEuro">
+      <soap12:operation soapAction="Web Services/ConvertToEuro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowList">
+      <soap12:operation soapAction="Web Services/ShowList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="My_x0020_first_x0020_web_x0020_service">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Serviciu Web pentru Cursul de C#</wsdl:documentation>
+    <wsdl:port name="My_x0020_first_x0020_web_x0020_serviceSoap" binding="tns:My_x0020_first_x0020_web_x0020_serviceSoap">
+      <soap:address location="http://localhost:57603/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="My_x0020_first_x0020_web_x0020_serviceSoap12" binding="tns:My_x0020_first_x0020_web_x0020_serviceSoap12">
+      <soap12:address location="http://localhost:57603/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

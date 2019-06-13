@@ -1,0 +1,7 @@
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\bin\Debug\Lab4_Client.exe.config
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\bin\Debug\Lab4_Client.exe
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\bin\Debug\Lab4_Client.pdb
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\obj\Debug\Lab4_Client.csprojAssemblyReference.cache
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\obj\Debug\Lab4_Client.csproj.CoreCompileInputs.cache
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\obj\Debug\Lab4_Client.exe
+C:\Users\Ovi\Desktop\ii\Lab4_Client\Lab4_Client\obj\Debug\Lab4_Client.pdb

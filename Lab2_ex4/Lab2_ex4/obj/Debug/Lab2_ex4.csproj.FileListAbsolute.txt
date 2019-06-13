@@ -1,0 +1,9 @@
+G:\ii\Lab2_ex4\Lab2_ex4\obj\Debug\Lab2_ex4.Form1.resources
+G:\ii\Lab2_ex4\Lab2_ex4\obj\Debug\Lab2_ex4.Properties.Resources.resources
+G:\ii\Lab2_ex4\Lab2_ex4\obj\Debug\Lab2_ex4.csproj.GenerateResource.cache
+G:\ii\Lab2_ex4\Lab2_ex4\obj\Debug\Lab2_ex4.csproj.CoreCompileInputs.cache
+G:\ii\Lab2_ex4\Lab2_ex4\bin\Debug\Lab2_ex4.exe.config
+G:\ii\Lab2_ex4\Lab2_ex4\bin\Debug\Lab2_ex4.exe
+G:\ii\Lab2_ex4\Lab2_ex4\bin\Debug\Lab2_ex4.pdb
+G:\ii\Lab2_ex4\Lab2_ex4\obj\Debug\Lab2_ex4.exe
+G:\ii\Lab2_ex4\Lab2_ex4\obj\Debug\Lab2_ex4.pdb
